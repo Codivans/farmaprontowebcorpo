@@ -86,7 +86,7 @@ nav ul li{
     width: 100%;
     padding-block: 10px;
 
-    background-image: url('./assets/bgblue.jpg');
+    background-image: url('./public/assets/bgblue.jpg');
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
