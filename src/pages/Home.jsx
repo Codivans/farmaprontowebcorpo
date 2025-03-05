@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import farmapronto from './../../src/assets/farmapronto.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { GiSupersonicArrow } from "react-icons/gi";
-import { FaRegLightbulb } from "react-icons/fa";
-import { IoDiamondOutline } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
-import imgbannerflag from './../../src/assets/banner_flag.JPG'
+import imgbannerflag from './../../src/assets/banner_flag.jpg'
 import nadro from './../../src/assets/nadro.png'
 import marzam from './../../src/assets/marzam.png'
 import fanasa from './../../src/assets/fanasa.png'
