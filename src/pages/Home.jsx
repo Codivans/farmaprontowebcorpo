@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import farmapronto from './../../src/assets/farmapronto.png'
+import farmaprontoWhite from './../../src/assets/farmaprontowhite.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaWhatsapp } from "react-icons/fa";
 import imgbannerflag from './../../src/assets/banner_flag.jpg'
 import nadro from './../../src/assets/nadro.png'
 import marzam from './../../src/assets/marzam.png'
 import fanasa from './../../src/assets/fanasa.png'
-import farma from './../../src/assets/joven.png';
+import farma from './../../src/assets/jovencircle.png';
 import grafica from './../../src/assets/grafica.png';
 import cardgrafica from './../../src/assets/cardgrafica.png';
+import money from './../../src/assets/money.png';
+import coin from './../../src/assets/coin.png';
 import bgWaves from './../assets/bg_waves.png';
 
 import photo_history_01 from './../assets/photo_history_01.png';
@@ -34,6 +36,16 @@ import 'swiper/css/effect-cards';
 import { EffectCards, Autoplay } from 'swiper/modules';
 
 export function Home() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 90);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // const [currentWordIndex, setCurrentWordIndex] = useState(0);
   // const words = ['Curso Capacitación Nadro 23 y 24 de Septiembre 2024', 'Junta General de Agremiados 31 de Octubre 2024', 'Feria comercial ESQUIFARMA 28 Noviembre 2024'];
@@ -79,9 +91,9 @@ for (var i = 0; i < classname.length; i++) {
 
   return (
     <>
-     <header>
+     <header className={`${scrolled ? 'solid' : 'transparent'}`}>
         <div className='wrap_marge wrap_header'>
-          <img src={farmapronto} className='brand' />
+          <img src={farmaprontoWhite} className='brand' />
           <nav>
             <ul>
               <li><Link to='/'>Inicio</Link></li>
@@ -94,29 +106,24 @@ for (var i = 0; i < classname.length; i++) {
           </nav>
         </div>
      </header>
-     <section className='wrap_banner section_hero'
-            style={{
-              backgroundImage: `url(${bgWaves})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              width: '100%',
-              height: '490px',
-            }} 
-    >
+     <section className='wrap_banner section_hero'>
         <div className='column_text'>
-          <h2>Invierte en el Futuro de la Salud con Farmapronto</h2>
-          <h4>Un modelo de negocio probado para quienes desean invertir en una farmacia de confianza</h4>
+          <h2>Invierte en el futuro de la salud con <sapn className='txt_yellow'>farmapronto</sapn></h2>
+          <p>"Un modelo de negocio probado para quienes desean invertir en una farmacia de confianza, con el respaldo de más de 50 años en la industria y con socios comerciales que nos brindan un surtido y precio favorable."</p>
+
           <div className="middle">
             <button className="confetti-button">Contáctanos vía WhatsApp</button> 
           </div>
-          {/* <Link to='' className='link_whatsApp'>Contáctanos vía WhatsApp</Link> */}
+          
         </div>       
         <div className='column_img'>
           
           <img className='img_joven animate__animated animate__bounceIn' src={farma}/>
-          <img className='img_card_grafica animate__animated animate__bounceInDown' src={cardgrafica} />
-          <img className='img_grafica animate__animated animate__bounceInUp' src={grafica} />
+          <img className='img_card_grafica floating' src={cardgrafica} />
+          <img className='img_grafica floating' src={grafica} />
+          <img className='img_money floating' src={money} />
+          <img className='img_coin floating' src={coin} />
+          
           
         </div>
      </section>

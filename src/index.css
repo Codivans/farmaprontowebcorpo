@@ -23,13 +23,25 @@ body{
 }
 
 header{
-    background-color: white;
+    background-color: transparent;
     width: 100%;
     position: sticky;
     top: 0px;
     left: 0px;
     z-index: 999;
+    height: 70px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+.transparent {
+    background-color: transparent;
+}
+  
+.solid {
+    background-color: #0d161c;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
 .flag_events{
     text-align: center;
     width: 100%;
@@ -74,75 +86,104 @@ nav ul li{
 nav ul li a{
     border-radius: 4px;
     text-decoration: none;
-    color: #030e3c;
+    color: white;
     font-size: 14px;
     padding: 10px 15px;
 }
 
-
-
-
 .wrap_banner{
-    background-color: white;
     width: 100%;
-    height: 490px;
+    height: 690px;
     overflow: hidden;
+    background: #00136A;
+    background: linear-gradient(90deg, rgba(0, 19, 106, 1) 0%, rgba(0, 51, 126, 1) 50%, rgba(0, 113, 188, 1) 100%);
+    margin-top: -70px;
+    padding-block: 50px;
 }
 
 .section_hero{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: white !important;
+    display: grid;
+    grid-template-columns: 50% 400px;
     padding-block: 20px;
+    align-items: center;
+    justify-content: center;
 }
 .section_hero .column_text{
-    width: 50%;
+    height: 300px;
 }
 .section_hero h2{
-    font-family: "Poppins", sans-serif;
-    color: #2b2b2b;
-    font-size: 52px;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    font-size: 50px;
     font-weight: 800;
     line-height: 60px;
 }
-.section_hero h4{
-    font-family: "Poppins", sans-serif;
-    color: #333333;
-    margin-top: -30px;
-    font-size: 16px;
-    font-weight: 500;
+
+.txt_yellow{
+    color: #ffd475;
 }
-.link_whatsApp{
-    background-color: #2dd160;
-    border-radius: 50px;
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
+
+
+.section_hero p{
+    font-family: "Poppins", sans-serif;
+    color: #b3dffe;
+    margin-top: -30px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .column_img{
     position: relative;
-    width: 480px;
+    width: 600px;
     height: 600px;
 }
 
 .img_joven{
     margin: 100px 40px;
-    width: 360px;
+    width: 540px;
 }
 .img_card_grafica{
     position: absolute;
     margin-top: 130px;
-    right: 80px;
+    right: 100px;
     z-index: 100;
 }
 .img_grafica{
     position: absolute;
-    margin-top: 330px;
-    right: 120px;
-
+    margin-top: 370px;
+    right: 60px;
 }
+
+.img_money{
+    position: absolute;
+    margin-top: 390px;
+    left: 40px;
+    width: 90px;
+    height: 90px;
+}
+.img_coin{
+    position: absolute;
+    margin-top: 190px;
+    left: 60px;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-18px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+.floating {
+    animation: float 4s ease-in-out infinite;
+  }
 
 
 #about{
@@ -410,10 +451,12 @@ footer ul li{
   .middle{
     margin-top: -100px;
     height: 100px;
+    padding-block: 10px;
 }
 .confetti-button {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 1em;
+    font-weight: 600;
     padding: 1em 2em;
     margin-top: 100px;
     margin-bottom: 60px;
