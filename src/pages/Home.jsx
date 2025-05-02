@@ -11,17 +11,32 @@ import grafica from './../../src/assets/grafica.png';
 import cardgrafica from './../../src/assets/cardgrafica.png';
 import money from './../../src/assets/money.png';
 import coin from './../../src/assets/coin.png';
-import bgWaves from './../assets/bg_waves.png';
+import bg from './../assets/background.png';
+import nave from './../assets/nave.png'
 
-import photo_history_01 from './../assets/photo_history_01.png';
-import photo_history_02 from './../assets/photo_history_02.png';
-import photo_history_03 from './../assets/photo_history_03.png';
-import photo_history_04 from './../assets/photo_history_04.png';
-import photo_history_05 from './../assets/photo_history_05.png';
-import photo_history_06 from './../assets/photo_history_06.png';
-import photo_history_07 from './../assets/photo_history_07.png';
-import photo_history_08 from './../assets/photo_history_08.png';
-import photo_history_09 from './../assets/photo_history_09.png';
+import img_01 from './../assets/sucursales/img_01.jpg';
+import img_02 from './../assets/sucursales/img_02.jpg';
+import img_03 from './../assets/sucursales/img_03.jpg';
+import img_04 from './../assets/sucursales/img_04.jpg';
+import img_05 from './../assets/sucursales/img_05.jpg';
+import img_06 from './../assets/sucursales/img_06.jpg';
+import img_07 from './../assets/sucursales/img_07.jpg';
+import img_08 from './../assets/sucursales/img_08.jpg';
+import img_09 from './../assets/sucursales/img_09.jpg';
+import img_10 from './../assets/sucursales/img_10.jpg';
+import img_11 from './../assets/sucursales/img_11.jpg';
+import img_12 from './../assets/sucursales/img_12.jpg';
+import img_13 from './../assets/sucursales/img_13.jpg';
+import img_14 from './../assets/sucursales/img_14.jpg';
+import img_15 from './../assets/sucursales/img_15.jpg';
+import img_16 from './../assets/sucursales/img_16.jpg';
+import img_17 from './../assets/sucursales/img_17.jpg';
+import img_18 from './../assets/sucursales/img_18.jpg';
+import img_19 from './../assets/sucursales/img_19.jpg';
+import img_20 from './../assets/sucursales/img_20.jpg';
+import img_21 from './../assets/sucursales/img_21.jpg';
+import img_22 from './../assets/sucursales/img_22.jpg';
+
 
 import farmamayoreo from './../../src/assets/farmamayoreo.svg'
 import AnimatedCounter from './../componentes/AnimatedCounter';
@@ -118,7 +133,7 @@ for (var i = 0; i < classname.length; i++) {
         </div>       
         <div className='column_img'>
           
-          <img className='img_joven animate__animated animate__bounceIn' src={farma}/>
+          <img className='img_joven' src={farma}/>
           <img className='img_card_grafica floating' src={cardgrafica} />
           <img className='img_grafica floating' src={grafica} />
           <img className='img_money floating' src={money} />
@@ -146,15 +161,28 @@ for (var i = 0; i < classname.length; i++) {
                     }}
                     className="mySwiper"
                   >
-                    <SwiperSlide><img src={photo_history_01} /></SwiperSlide>
-                    <SwiperSlide><img src={photo_history_02} /></SwiperSlide>
-                    <SwiperSlide><img src={photo_history_03} /></SwiperSlide>
-                    <SwiperSlide><img src={photo_history_04} /></SwiperSlide>
-                    <SwiperSlide><img src={photo_history_05} /></SwiperSlide>
-                    <SwiperSlide><img src={photo_history_06} /></SwiperSlide>
-                    <SwiperSlide><img src={photo_history_07} /></SwiperSlide>
-                    <SwiperSlide><img src={photo_history_08} /></SwiperSlide>
-                    <SwiperSlide><img src={photo_history_09} /></SwiperSlide> 
+                    <SwiperSlide><img src={img_01} /></SwiperSlide>
+                    <SwiperSlide><img src={img_02} /></SwiperSlide>
+                    <SwiperSlide><img src={img_03} /></SwiperSlide>
+                    <SwiperSlide><img src={img_04} /></SwiperSlide>
+                    <SwiperSlide><img src={img_05} /></SwiperSlide>
+                    <SwiperSlide><img src={img_06} /></SwiperSlide>
+                    <SwiperSlide><img src={img_07} /></SwiperSlide>
+                    <SwiperSlide><img src={img_08} /></SwiperSlide>
+                    <SwiperSlide><img src={img_09} /></SwiperSlide>
+                    <SwiperSlide><img src={img_10} /></SwiperSlide>
+                    <SwiperSlide><img src={img_11} /></SwiperSlide>
+                    <SwiperSlide><img src={img_12} /></SwiperSlide>
+                    <SwiperSlide><img src={img_13} /></SwiperSlide>
+                    <SwiperSlide><img src={img_14} /></SwiperSlide>
+                    <SwiperSlide><img src={img_15} /></SwiperSlide>
+                    <SwiperSlide><img src={img_16} /></SwiperSlide>
+                    <SwiperSlide><img src={img_17} /></SwiperSlide>
+                    <SwiperSlide><img src={img_18} /></SwiperSlide>
+                    <SwiperSlide><img src={img_19} /></SwiperSlide>
+                    <SwiperSlide><img src={img_20} /></SwiperSlide>
+                    <SwiperSlide><img src={img_21} /></SwiperSlide>
+                    <SwiperSlide><img src={img_22} /></SwiperSlide>
                   </Swiper>
               </>
                 
@@ -164,71 +192,48 @@ for (var i = 0; i < classname.length; i++) {
         
 
      </section>
-      <div className='about_us'>
-        <div className='content_about_us'>
-          <div className='content_mision_vision'>
-            <div className='content_mision'>
-              <h3>Misión</h3>
-              <p>Es apoyar a nuestros agremiados, ofreciendo alianzas comerciales con proveedores y laboratorios del mercado. Asimismo, nos comprometemos a brindar a la población productos de salud de manera accesible, pronta y eficaz.</p>
+      <div className='about_us bg-banner '
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: '100%',
+          height: '700px',
+        }}>
+
+        <div className='content_about_nave'>
+          <div className='card_about card_vision'>
+            <div className='header_about'>
+              <span>NUESTRA VISION</span>
             </div>
-            <div className='content_vision'>
-              <h3>Visión</h3>
+            <div className='body_about '>
               <p>Es apoyar a nuestros agremiados, ofreciendo alianzas comerciales con proveedores y laboratorios del mercado. Asimismo, nos comprometemos a brindar a la población productos de salud de manera accesible, pronta y eficaz.</p>
             </div>
           </div>
-          <div className='content_valores'>
-            <h3>Valores</h3>
-            <ul>
-              <li>Valor 1</li>
-              <li>Valor 2</li>
-              <li>Valor 3</li>
-              <li>Valor 4</li>
-              <li>Valor 5</li>
 
-            </ul>
-
+          <div className='card_about card_mision'>
+            <div className='header_about'>
+              <span>NUESTRA MISION</span>
+            </div>
+            <div className='body_about'>
+              <p>Es apoyar a nuestros agremiados, ofreciendo alianzas comerciales con proveedores y laboratorios del mercado. Asimismo, nos comprometemos a brindar a la población productos de salud de manera accesible, pronta y eficaz.</p>
+            </div>
           </div>
+
+          <div className='card_about card_values'>
+            <div className='header_about'>
+              <span>NUESTROS VALORES</span>
+            </div>
+            <div className='body_about'>
+              <p>Es apoyar a nuestros agremiados, ofreciendo alianzas comerciales con proveedores y laboratorios del mercado. Asimismo, nos comprometemos a brindar a la población productos de salud de manera accesible, pronta y eficaz.</p>
+            </div>
+          </div>
+          <img src={nave} />
         </div>
 
-      </div>
-
-     {/* <section  id='about'>
-      <AnimatedOnScroll animationClass="animate__fadeInUp about_text">
-        <h2>¿Quienes somos?</h2>
-        <p>Farmapronto® es una asociación de empresarios farmacéuticos independientes que operan bajo una identidad corporativa unificada y un nombre comercial común. El modelo de negocio se basa en un contrato de uso de marca. La finalidad de este esquema es posicionarnos como la cadena con el mayor número de farmacias independientes afiliadas, permitiéndonos competir eficazmente con grandes cadenas comerciales regionales.</p>
-      </AnimatedOnScroll>
-      
-
-      <div className='grid_card_information'>
-        <AnimatedOnScroll animationClass='card_information animate__fadeInUp'>
-          <div className='circle_svg'>
-            <GiSupersonicArrow />
-          </div>
-          <h3>Misión</h3>
-          <p>Es apoyar a nuestros agremiados, ofreciendo alianzas comerciales con proveedores y laboratorios del mercado. Asimismo, nos comprometemos a brindar a la población productos de salud de manera accesible, pronta y eficaz.</p>
-        </AnimatedOnScroll>
-
-        <AnimatedOnScroll animationClass='card_information animate__fadeInUp'>
-          <div className='circle_svg'>
-            <FaRegLightbulb />
-          </div>
-          <h3>Visión</h3>
-          <p>Es apoyar a nuestros agremiados, ofreciendo alianzas comerciales con proveedores y laboratorios del mercado. Asimismo, nos comprometemos a brindar a la población productos de salud de manera accesible, pronta y eficaz.</p>
-        </AnimatedOnScroll>
-
-        <AnimatedOnScroll animationClass='card_information animate__fadeInUp'>
-          <div className='circle_svg'>
-            <IoDiamondOutline />
-          </div>
-          <h3>Valores</h3>
-          <p>Es apoyar a nuestros agremiados, ofreciendo alianzas comerciales con proveedores y laboratorios del mercado. Asimismo, nos comprometemos a brindar a la población productos de salud de manera accesible, pronta y eficaz.</p>
-        </AnimatedOnScroll>
+        
 
       </div>
-
-     </section> */}
-
-     {/* <svg className='wave_about' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#094894" fill-opacity="1" d="M0,160L1440,128L1440,0L0,0Z"></path></svg> */}
 
      <section className='container_banner_lealtad'>
         <img src={imgbannerflag} />

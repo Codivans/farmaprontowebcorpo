@@ -30,6 +30,7 @@ header{
     left: 0px;
     z-index: 999;
     height: 70px;
+    margin-top: -2px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .transparent {
@@ -137,38 +138,49 @@ nav ul li a{
     position: relative;
     width: 600px;
     height: 600px;
+    overflow: visible;
 }
 
-.img_joven{
+/* Estilos individuales - sin cambios mayores excepto un tip */
+.img_joven {
     margin: 100px 40px;
     width: 540px;
-}
-.img_card_grafica{
+  }
+  
+  /* 🔽 Asegúrate de usar 'top' o 'bottom' en lugar de 'margin-top' con 'position: absolute' */
+  .img_card_grafica {
     position: absolute;
-    margin-top: 130px;
+    top: 130px;
     right: 100px;
     z-index: 100;
-}
-.img_grafica{
+  }
+  .img_grafica {
     position: absolute;
-    margin-top: 370px;
+    top: 370px;
     right: 60px;
-}
-
-.img_money{
+  }
+  .img_money {
     position: absolute;
-    margin-top: 390px;
+    top: 390px;
     left: 40px;
     width: 90px;
     height: 90px;
-}
-.img_coin{
+  }
+  .img_coin {
     position: absolute;
-    margin-top: 190px;
+    top: 190px;
     left: 60px;
     width: 100px;
     height: 100px;
-}
+  }
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: inline-block;
+  }
 
 @keyframes float {
     0% {
@@ -181,19 +193,18 @@ nav ul li a{
       transform: translateY(0px);
     }
 }
-.floating {
-    animation: float 4s ease-in-out infinite;
-  }
+
 
 
 #about{
-    background-color: #0046ba;
+    background-color: #1b2832;
     margin: 0px auto;
     width: 100%;
     padding-top: 80px;
     padding-bottom: 80px;
     overflow: hidden;
 }
+
 .columns_about{
     display: flex;
     margin: 0px auto;
@@ -203,10 +214,10 @@ nav ul li a{
 }
 
 #about h2{
-    color: white;
+    color: #1292ee;
     font-size:  clamp(1rem, 3vw, 3.8rem);
     font-family: "Roboto", sans-serif;
-    text-align: center;
+    text-align: left;
     letter-spacing: -1.2px;
     line-height: 34px;
 }
@@ -216,12 +227,81 @@ nav ul li a{
     font-size: 20px;
     margin: 10px auto;
     width: 40%;
-    text-align: center;
+    text-align: letf;
     padding: 10px;
 }
 
+.content_about_nave{
+    width: 90%;
+    margin: 0px auto;
+    position: relative;
+}
+.content_about_nave > img{
+    height: 500px;
+    width: 600px;
+    margin-inline: calc((100% - 600px) - 300px);
+    margin-top: 180px;
+}
 
-.content_about_us{
+.card_about{
+    border-radius: 8px;
+    width: 300px;
+    overflow: hidden;
+    height: 160px;
+}
+
+.header_about{
+    color: white;
+    height: 20px;
+    padding: 2px;
+    text-align: center;
+}
+.header_about span{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px;
+}
+.body_about{
+    color: white;
+    font-size: 14px;
+    width: 96%;
+    margin: 0px auto;
+}
+
+.card_vision{
+    background-color: #ce4b5f;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    z-index: 100;
+}
+.card_vision .header_about{
+    background-color: #a43440;
+}
+
+.card_mision{
+    background-color: #abc9ff;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 140px);
+    z-index: 100;
+}
+.card_mision .header_about{
+    background-color: #7c97d3;
+}
+
+.card_values{
+    background-color: #e7977e;
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    z-index: 100;
+}
+.card_values .header_about{
+    background-color: #d06a4a;
+}
+
+/* .content_about_us{
     background-color: white;
     width: 80%;
     margin: 10px auto;
@@ -235,11 +315,10 @@ nav ul li a{
 }
 .content_about_us .content_mision_vision, .content_valores{
     width: 50%;
-    
-}
+} */
 
 
-.grid_card_information{
+/* .grid_card_information{
     width: 90%;
     display: flex;
     justify-content: center;
@@ -280,7 +359,7 @@ nav ul li a{
 
 .wave_about{
     margin-top: -50px;
-}
+} */
 
 
 .container_banner_lealtad{
@@ -444,6 +523,11 @@ footer ul li{
     font-size: 22px;
     font-weight: bold;
     color: #fff;
+  }
+
+  .swiper-slide IMG{
+    width: 590px;
+    height: 380px;
   }
   
 
